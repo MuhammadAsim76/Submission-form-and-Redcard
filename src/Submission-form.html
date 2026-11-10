@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission form</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- header logo  -->
+    <header class=" bg-white ml-7  pt-5">
+        <img src="../Assets/logo.png" alt="Form-logo" class="w-16 md:w-20 lg:w-24 ">
+    </header>
+
+    <main class=" relative overflow-hidden bg-[#98242a] ml-7 mt-5 min-h-screen ">
+        <section
+            class="grid grid-cols-1 lg:grid-cols-2 gap-3   p-7 md:px-15 lg:py-20 lg:px-25 xl:gap-25 xl:py-20 xl:px-25">
+
+            <!-- Left side  -->
+            <div class="p-5 md:pl-4 lg:pt-90  xl:pt-80 ">
+                <h1
+                    class="text-white text-5xl font-extrabold pt-4 pb-3 md:text-6xl xl:text-[100px] [text-shadow:4px_4px_0px_#5a1216]">
+                    Submission</h1>
+                <div class="xl:pr-18 ">
+                    <p class="text-[16px] md:text-[18px]/8 lg:text-[20px] xl:text-[21px]/8 mt-4 ">All details of
+                        submissions will be kept strictly private and confidential by Mailman and will not be used for
+                        any purpose other than judging Red Card 2018 winners.</p>
+                    <div class="relative"> <i class="fa-solid fa-square-plus text-white absolute right-0"></i></div>
+                </div>
+                <div class="pr-10 xl:pr-30">
+                    <h2 class="text-2xl md:text-3xl xl:text-[33px] font-extrabold  mt-4 ">Applications will close on the
+                        15th December 2017</h2>
+                    <div class="relative"> <i class="fa-solid fa-square-plus text-white absolute right-0"></i></div>
+                </div>
+            </div>
+
+            <!-- Right side Form  -->
+            <div class="px-4 ">
+                <form class="flex flex-col md:py-5 gap-7">
+                    <input type="text" id="name" placeholder="Name" required
+                        class="border-[3px] border-white p-5  md:p-6 md:text-lg text-white outline-none rounded-sm   placeholder:text-white ">
+                    <input type="email" id="email" placeholder="Email Address" required
+                        class="border-[3px] border-white p-5 md:p-6 md:text-lg text-white outline-none rounded-sm placeholder:text-white ">
+                    <input type="text" id="organisation" placeholder="Organisation"
+                        class="border-[3px] border-white p-5 md:p-6 md:text-lg text-white  outline-none rounded-sm placeholder:text-white">
+
+                    <h2 class="text-3xl font-extrabold mt-3 md:text-4xl">Which Award
+                        <p class=" pt-2 text-sm font-medium text-white  md:text-md ">(Please tick and provide details
+                            for all of the awards you would like to be nominated for)</p>
+                    </h2>
+
+                    <div>
+                        <div class="flex items-center " style="gap:138px;">
+                            <label for="livestream-check"
+                                class=" flex items-center gap-2 text-md lg:text-lg text-white ">
+                                <input type="checkbox" name="livestream" id="livestream-check"
+                                    class="accent-white size-5 "> Best Livestream
+                            </label>
+                            <a><i class="fa-solid fa-square-plus text-white"></i></a>
+                        </div>
+                        <textarea name="livestream-details" id="livestream-details" rows="3"
+                            placeholder="Description & Results (max. 150 words)"
+                            class=" text-white placeholder:text-white border-[3px] border-white p-3 mt-4 w-full md:p-4  md:text-md outline-none rounded-sm resize-none"></textarea>
+                    </div>
+
+
+                    <div>
+                        <div class="flex items-center " style="gap:102px;">
+                            <label for="tour-check" class="flex items-center gap-2 text-md lg:text-lg text-white ">
+                                <input type="checkbox" name="tour-campaign" id="tour-check"
+                                    class="accent-white size-5 "> Best Tour Campaign
+                            </label>
+                            <a><i class="fa-solid fa-square-plus text-white"></i></a>
+
+                        </div>
+                        <textarea name="tour-details" id="tour-details" rows="3"
+                            placeholder="Description & Results (max. 150 words)"
+                            class=" text-white placeholder:text-white border-[3px] border-white p-2 mt-4 w-full md:p-3 md:text-md outline-none rounded-sm resize-none"></textarea>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center " style="gap:72px;">
+                        <label for="Sponsor-check"
+                            class=" relative flex items-center gap-2 text-md lg:text-lg text-white ">
+                            <input type="checkbox" name="sponsor-activation" id="Sponsor-check"
+                                class="accent-white size-5 "> Best Sponsor Activation
+                        </label>
+                        <a><i class="fa-solid fa-square-plus text-white"></i></a>
+
+                        </div>
+                        <textarea name="Sponsor-details" id="Sponsor-details" rows="3"
+                            placeholder="Description & Results (max. 150 words)"
+                            class=" text-white placeholder:text-white border-[3px] border-white p-2 mt-4 w-full md:p-3 md:text-md outline-none rounded-sm resize-none"></textarea>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center " style="gap:76px;">
+                        <label for="technology-check"
+                            class=" relative flex items-center gap-2 text-md lg:text-lg text-white ">
+                            <input type="checkbox" name="technology-check" id="technology-check"
+                                class="accent-white size-5 "> Best Use of Technology
+                        </label>
+                         <a><i class="fa-solid fa-square-plus text-white"></i></a>
+                         </div>
+                        <textarea name="technology-details" id="technology-details" rows="3"
+                            placeholder="Description & Results (max. 150 words)"
+                            class=" text-white placeholder:text-white border-[3px] border-white p-2 mt-4 w-full md:p-3 md:text-md outline-none rounded-sm resize-none"></textarea>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center " style="gap:85px;">
+                        <label for="Campaign-check"
+                            class=" relative flex items-center gap-2 text-md lg:text-lg text-white ">
+                            <input type="checkbox" name="online-campaign" id="Campaign-check"
+                                class="accent-white size-5 "> Best Online Campaign
+                        </label>
+                        <a><i class="fa-solid fa-square-plus text-white"></i></a>
+                        </div>
+                        <textarea name="Campaign-details" id="Campaign-details" rows="3"
+                            placeholder="Description & Results (max. 150 words)"
+                            class=" text-white placeholder:text-white border-[3px] border-white p-2 mt-4 w-full md:p-3 md:text-md outline-none rounded-sm resize-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="bg-white text-black-600 border-none p-5 outline-none rounded-sm text-3xl w-full xl:w-150 cursor-pointer hover:bg-gray-100 hover:shadow-xl/30 ">
+                        <i class="fa-solid fa-check "></i>
+                        Submission Successful
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- corner triangle -->
+        <div
+            class="absolute bottom-0 right-0 w-15 h-15 md:w-20 md:h-20 bg-white [clip-path:polygon(100%_0,100%_100%,0_100%)]">
+        </div>
+    </main>
+</body>
+
+</html>
